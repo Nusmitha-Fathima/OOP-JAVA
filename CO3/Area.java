@@ -1,16 +1,12 @@
-class Shape
-{
+class Shape{
 	double x;
-	Shape(double a)
-      {
+	Shape(double a){
 		x=a;
-      }
+	}
 }
-class Rectangle extends Shape
-{
+class Rectangle extends Shape{
 	double y;
-	Rectangle(double a,double b)
-        {
+	Rectangle(double a,double b){
 		super(a);
 		y=b;
 	}
@@ -18,33 +14,24 @@ class Rectangle extends Shape
 		System.out.println("Area of rectangle:"+(x*y));
 	}
 }
-class Square extends Shape
-{
-
-	Square(double a)
-       {
+class Square extends Shape{
+	Square(double a){
 		super(a);
 	}
-	void area(double x)
-        {
+	void area(double x){
 		System.out.println("Area of square:"+(x*x));
 	}
 }
-class Circle extends Shape
-{
-	Circle(double a)
-        {
+class Circle extends Shape{
+	Circle(double a){
 		super(a);
 	}
-	void area(double x)
-        {
+	void area(double x){
 		System.out.println("Area of circle:"+(3.14*x*x));
 	}
 }
-class Area
-{
-	public static void main(String ar[])
-{
+class Area{
+	public static void main(String ar[]){
 		
 		Rectangle r=new Rectangle(8,6);
 		Square s=new Square(4);
@@ -56,5 +43,5 @@ class Area
 		s.area(4);
 		ref=c;
 		c.area(2);
-}
+	}
 }
